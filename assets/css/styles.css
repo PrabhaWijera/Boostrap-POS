@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;;
+}
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #495057;
+}
+
+.homemenu{
+    display: block;
+}
+
+.bg-warning{
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.customerBTNs{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn-block{
+    position: relative;
+    border: 2px solid black;
+    width: 12vw;
+    height: 5vh;
+    border-radius: 5px;
+}
+.ItemsBTNs{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.btn-block{
+    position: relative;
+    border: 2px solid black;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 5px;
+}
