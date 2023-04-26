@@ -14,7 +14,9 @@ body{
     overflow-x: hidden;
     background-color: #495057;
 }
-
+.navbar{
+    background-color: #0B2447;
+}
 .homemenu{
     display: block;
 }
