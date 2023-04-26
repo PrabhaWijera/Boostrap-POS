@@ -55,3 +55,123 @@ body{
     height: 5vh;
     border-radius: 5px;
 }
+.placeorder{
+    position: relative;
+    width: 100vw;
+    height: 130vh;
+}
+.window2{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+}
+.leftbox{
+    position: absolute;
+    left: 2px;
+    width: 49vw;
+    height: 50vh;
+    border: 3px solid black;
+    background-color: #03C988;
+    box-shadow: gray 5px 5px 5px;
+
+}
+.rightbox{
+    position: absolute;
+    right: 20px;
+    width: 49vw;
+    height: 50vh;
+    border: 3px solid black;
+    background-color: #F7C04A;
+    box-shadow: gray 5px 5px;
+
+
+}
+.leftboxtitlebox{
+    position: absolute;
+    width: 49vw;
+    height: 5vh;
+    background-color: #13005A;
+}
+.rightboxtiltebox{
+    position: absolute;
+    width: 49vw;
+    height: 5vh;
+    background-color: #13005A;
+}
+.form-group{
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    width:15vw;
+    height: 10vh;
+}
+.ordercolum{
+    width: 20vw;
+    border-radius: 5px;
+}
+.customerdivcolum{
+    position: absolute;
+    top: 45px;
+    left: 450px;
+    width:15vw;
+    height: 10vh;
+}
+.addplaceorderBTN{
+    background-color: #20EF35;
+}
+.item-codecolum{
+    width: 19vw;
+    border-radius: 5px;
+}
+.rightboxtiltebox>h2{
+     color: white;
+    font-size: 25px;
+}
+.leftboxtitlebox>h2{
+    color: white;
+    font-size: 25px;
+}
+
+.windowdown{
+    width: 100vw;
+    height: 20vh;
+    background-color: #A555EC;
+    border-radius: 5px;
+    border: 2px solid black;
+    position: relative;
+}
+.windowdowntitle{
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    background-color: #13005A;
+}
+.windowdowntitle>h2{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+#billin{
+    position: relative;
+    top: 50px;
+}
+#totlable{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 460px;
+}
+#subtotlable{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 460px;
+}
+.windowdown button{
+    position: absolute;
+    top: 75px;
+    right: 150px;
+    width: 120px;
+    height: fit-content;
+}

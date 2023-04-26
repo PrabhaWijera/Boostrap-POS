@@ -5,6 +5,7 @@
     <title>POS System</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+<!--    https://prabhawijera.github.io/Boostrap-POS/-->
 </head>
 <body>
 <header>
@@ -313,10 +314,161 @@
         </tbody>
     </table>
 </section>
-<!--==================add====Form ===========-->
 
 
+<!--==========place order=====================-->
+<section class="placeorder">
+    <div class="bg-warning">
+        <h1 class="text-center">🛒 PlaceOrder</h1>
+    </div>
+    <br>
+    <br>
+    <div class="window2">
+        <div class="leftbox">
+            <div class="leftboxtitlebox">
+                <h2>Invoice Details</h2>
+            </div>
+            <form action="" class="leftfrom">
+                <div class="form-group">
+                    <label for="order-id">Order Id :</label>
+                    <br>
+                    <input type="text" class="item-codecolum" id="order-id" name="orderid">
 
+                    <br>
+                    <br>
+
+                    <div class="cusname">
+                        <label for="cus-name">Name :</label>
+                        <input type="text" id="cus-name" name="name" class="item-codecolum">
+                    </div>
+
+                    <br>
+                    <div class="salary">
+                        <label for="salry-colum">Salary :</label>
+                        <input type="text" name="salrycolunm" class="item-codecolum" id="salry-colum">
+                    </div>
+                </div>
+
+                <div class="customerdivcolum">
+                    <label for="customer-id">Customer Id :</label>
+                    <input type="text" id="customer-id" class="item-codecolum" name="customerId">
+                    <br>
+                    <br>
+                    <label for="address">Address :</label>
+                    <input type="text" name="address" class="item-codecolum" id="address">
+                    <br>
+                    <br>
+                    <label for="date">Date :</label>
+                    <input type="text" name="date" class="item-codecolum" id="date">
+
+                </div>
+
+            </form>
+        </div>
+
+        <div class="rightbox">
+            <div class="rightboxtiltebox">
+                <h2>Item Select</h2>
+            </div>
+
+            <form action="" class="rightfrom">
+                <div class="form-group">
+                    <label for="Item">Item:</label>
+                    <br>
+                    <input type="text" class="item-codecolum" id="Item" name="Item">
+
+                    <br>
+                    <br>
+
+                    <div class="item-name">
+                        <label for="Itemname">Item Name :</label>
+                        <input type="text" id="Itemname" name="name" class="item-codecolum">
+                    </div>
+
+                    <br>
+                    <div class="qtyonhand">
+                        <label for="Qtyonhand">QtyOnHand :</label>
+                        <input type="text" name="qtyOnHand" class="item-codecolum" id="Qtyonhand">
+                    </div>
+                </div>
+
+                <div class="customerdivcolum">
+                    <label for="ItemCode">Item Code :</label>
+                    <input type="text" id="ItemCode" class="item-codecolum" name="ItemCode">
+                    <br>
+                    <br>
+                    <label for="Price">Price :</label>
+                    <input type="text" name="Price" class="item-codecolum" id="Price">
+                    <br>
+                    <br>
+                    <label for="orderQty">Order Quantity :</label>
+                    <input type="text" name="orderQty" class="item-codecolum" id="orderQty">
+                    <br>
+                    <br>
+                    <button type="submit" class="addplaceorderBTN">➕ Add Item</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <br>
+
+    <div class="windowdown">
+        <div class="windowdowntitle">
+            <h2>Order Biling</h2></div>
+        <div class="row g-3" id="billin">
+            <div class="col-2">
+                <input type="text" class="form-control" placeholder="Cash-  Rs /=" aria-label="Cash">
+            </div>
+            <div class="col-2">
+                <input type="text" class="form-control" placeholder="Discount" aria-label="Discount">
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" placeholder="Balance" aria-label="Balance">
+            </div>
+        </div>
+        <label id="totlable">Total:-</label>
+        <br>
+        <br>
+        <label id="subtotlable">Sub Total:-</label>
+        <button type="submit">🛒 BUY</button>
+    </div>
+
+    <br>
+
+    <table class="table bg-info">
+        <thead>
+        <tr>
+            <th scope="col">ItemCode</th>
+            <th scope="col">ItemName</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>Larry the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <script crossorigin="anonymous"
