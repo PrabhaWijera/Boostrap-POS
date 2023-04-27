@@ -13,12 +13,36 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: #495057;
+    position: relative;
 }
-.navbar{
+.container img{
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 3px;
+
+}
+.nav{
+    position: absolute;
+    left: 170px;
+}
+
+#home{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 55px;
+    line-height:50px;
     background-color: #0B2447;
+    box-shadow: 0 10px 10px #50577A;
+    z-index: 900;
+    position: fixed;
 }
 .homemenu{
     display: block;
+    position: relative;
+    top: 50px;
 }
 
 .bg-warning{
@@ -43,6 +67,10 @@ body{
     height: 5vh;
     border-radius: 5px;
 }
+#ITM{
+    position: relative;
+    top: 100px;
+}
 .ItemsBTNs{
     position: relative;
     display: flex;
@@ -50,6 +78,7 @@ body{
     flex-direction: row;
 
 }
+
 .btn-block{
     position: relative;
     border: 2px solid black;
@@ -59,121 +88,61 @@ body{
 }
 .placeorder{
     position: relative;
+    top: 100px;
     width: 100vw;
-    height: 130vh;
+    height: 100vh;
+    background-color: #bacbe6;
 }
-.window2{
-    position: relative;
+.mainwindoe{
     display: flex;
     width: 100vw;
-    height: 50vh;
-}
-.leftbox{
-    position: absolute;
-    left: 2px;
-    width: 49vw;
-    height: 50vh;
-    border: 3px solid black;
-    background-color: #03C988;
-    box-shadow: gray 5px 5px 5px;
-
-}
-.rightbox{
-    position: absolute;
-    right: 20px;
-    width: 49vw;
-    height: 50vh;
-    border: 3px solid black;
-    background-color: #F7C04A;
-    box-shadow: gray 5px 5px;
-
-
-}
-.leftboxtitlebox{
-    position: absolute;
-    width: 49vw;
-    height: 5vh;
-    background-color: #13005A;
-}
-.rightboxtiltebox{
-    position: absolute;
-    width: 49vw;
-    height: 5vh;
-    background-color: #13005A;
-}
-.form-group{
-    position: absolute;
-    top: 45px;
-    left: 10px;
-    width:15vw;
-    height: 10vh;
-}
-.ordercolum{
-    width: 20vw;
-    border-radius: 5px;
-}
-.customerdivcolum{
-    position: absolute;
-    top: 45px;
-    left: 450px;
-    width:15vw;
-    height: 10vh;
-}
-.addplaceorderBTN{
-    background-color: #20EF35;
-}
-.item-codecolum{
-    width: 19vw;
-    border-radius: 5px;
-}
-.rightboxtiltebox>h2{
-     color: white;
-    font-size: 25px;
-}
-.leftboxtitlebox>h2{
-    color: white;
-    font-size: 25px;
-}
-
-.windowdown{
-    width: 100vw;
-    height: 20vh;
-    background-color: #A555EC;
-    border-radius: 5px;
+    height: 65vh;
     border: 2px solid black;
     position: relative;
 }
-.windowdowntitle{
-    position: absolute;
-    width: 100%;
-    height: 5vh;
-    background-color: #13005A;
-}
-.windowdowntitle>h2{
-    color: white;
-    font-size: 25px;
-    text-align: center;
-}
-#billin{
+.mainwindoe>div:nth-child(1){
+    width: calc(100vw/3);
+    height: 65vh;
+    border: 1px solid red;
     position: relative;
+}
+.xbox{
+    position: absolute;
+    background-color: #20c997;
+    width: calc(100vw/3);
+    height:30px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+.mainwindoe>div:nth-child(2){
+    width: calc(100vw/3);
+    height: 65vh;
+    border: 1px solid red;
+}
+.mainwindoe>div:nth-child(3){
+    width: calc(100vw/3);
+    height: 65vh;
+    border: 1px solid red;
+}
+.ORDERFORM{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.itemform{
+    position: absolute;
     top: 50px;
 }
-#totlable{
-    color: white;
-    font-size: 30px;
+
+.form3{
     position: absolute;
-    right: 460px;
+    top: 50px;
 }
-#subtotlable{
-    color: white;
-    font-size: 30px;
-    position: absolute;
-    right: 460px;
-}
-.windowdown button{
-    position: absolute;
-    top: 75px;
-    right: 150px;
-    width: 120px;
-    height: fit-content;
+
+@media screen and (max-width: 1080px) {
+
 }

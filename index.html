@@ -14,7 +14,7 @@
     <nav class="navbar navbar-light" id="home">
         <div class="container">
             <a class="navbar-brand" href="https://www.youtube.com/watch?v=i6SO11KNIMI">
-                <img src="assets/img/logo.png" alt="" width="110" height="100">
+                <img src="assets/img/logo.png" alt="" >
             </a>
             <ul class="nav justify-content-lg-start">
                 <li class="nav-item">
@@ -134,10 +134,11 @@
             </div>
         </div>
         <br>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">📑️Get All Customer</button>
+        </div>
 
-      <button type="button" class="btn btn-warning btn-block getAllBtn">📑️Get All Customer</button>
     </div>
-
+    <br>
     <nav class="navbar navbar-light bg-secondary">
         <div class="container-fluid">
             <a class="navbar-brand ">🔍 Search Customer</a>
@@ -182,7 +183,7 @@
     </table>
 </main>
 
-<section class="" id="ITM">
+<section  id="ITM">
     <div class="bg-info">
         <h1 class="text-center">🗃️ Manage Items</h1>
     </div>
@@ -271,9 +272,9 @@
             </div>
         </div>
         <br>
-        <button type="button" class="btn btn-warning btn-block getAllBtn">📑️Get All Items</button>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">📑️Get All Customer</button>
     </div>
-
+    <br>
     <nav class="navbar navbar-light bg-secondary">
         <div class="container-fluid">
             <a class="navbar-brand">🔍 Search Items</a>
@@ -323,121 +324,107 @@
         <h1 class="text-center">🛒 PlaceOrder</h1>
     </div>
 
+    <div class="mainwindoe">
+<!--        orderdetails-->
+        <div>
+            <div class="xbox">Order Details</div>
+            <div class="ORDERFORM">
 
-    <div class="window2">
-        <div class="leftbox">
-            <div class="leftboxtitlebox">
-                <h2>Invoice Details</h2>
+                <label for="orderId">Order ID:</label>
+                <input type="text" name="orderID" id="orderId" style="width: 250px">
+                <br>
+                <br>
+                <label for="date" class="date">Date:</label>
+                <input type="datetime-local" name="date" id="date" style="width: 300px" class="date">
+                <br>
+                <br>
+                <label for="cusIds">Customer ID:</label>
+                <select name="cusid" id="cusIds"  style="width: 250px">
+                    <option value=""hidden>Customer ID's</option>
+                    <option value="C001">C001</option>
+                    <option value="C002">C002</option>
+                    <option value="C003">C003</option>
+                </select>
+                <br>
+                <br>
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name" style="width: 250px">
+                <br>
+                <br>
+                <label for="address">Address :</label>
+                <input name="address" id="address" style="width: 250px">
             </div>
-            <form action="" class="leftfrom">
-                <div class="form-group">
-                    <label for="order-id">Order Id :</label>
-                    <br>
-                    <input type="text" class="item-codecolum" id="order-id" name="orderid">
 
-                    <br>
-                    <br>
-
-                    <div class="cusname">
-                        <label for="cus-name">Name :</label>
-                        <input type="text" id="cus-name" name="name" class="item-codecolum">
-                    </div>
-
-                    <br>
-                    <div class="salary">
-                        <label for="salry-colum">Salary :</label>
-                        <input type="text" name="salrycolunm" class="item-codecolum" id="salry-colum">
-                    </div>
-                </div>
-
-                <div class="customerdivcolum">
-                    <label for="customer-id">Customer Id :</label>
-                    <input type="text" id="customer-id" class="item-codecolum" name="customerId">
-                    <br>
-                    <br>
-                    <label for="address">Address :</label>
-                    <input type="text" name="address" class="item-codecolum" id="address">
-                    <br>
-                    <br>
-                    <label for="date">Date :</label>
-                    <input type="text" name="date" class="item-codecolum" id="date">
-
-                </div>
-
-            </form>
         </div>
+<!--        items details-->
+        <div id="2box">
+            <div class="xbox"> Items Details</div>
+            <div class="itemform">
 
-        <div class="rightbox">
-            <div class="rightboxtiltebox">
-                <h2>Item Select</h2>
+                <label for="itemid">Items ID's:</label>
+                <select name="itemid" id="itemid"  style="width: 250px">
+                    <option value=""hidden>Item ID's</option>
+                    <option value="T001">T001</option>
+                    <option value="T002">T002</option>
+                    <option value="T003">T003</option>
+                </select>
+                <br>
+                <br>
+                <label for="itemName">Items Name :</label>
+                <select name="itemsname" id="itemName"  style="width: 250px">
+                    <option value=""hidden>Items Name's</option>
+                    <option value="LCY">LCY</option>
+                    <option value="Moose">Moose</option>
+                    <option value="T-shirts">T-shirts</option>
+                </select>
+                <br>
+                <br>
+                <label for="price">Price :</label>
+                <input type="text" name="price" id="price" style="width: 250px">
+                <br>
+                <br>
+                <label for="qtyOnhand">QTY On Hand :</label>
+                <input type="text" id="qtyOnhand" name="qtyOnhand" placeholder="QTY">
+                <br>
+                <br>
+                <label for="orderqty">Order Qty:</label>
+                <input type="text" id="orderqty" name="orderqty" placeholder="Order Qty">
+
+                <button type="submit">➕ Add Item </button>
             </div>
 
-            <form action="" class="rightfrom">
-                <div class="form-group">
-                    <label for="Item">Item:</label>
-                    <br>
-                    <input type="text" class="item-codecolum" id="Item" name="Item">
-
-                    <br>
-                    <br>
-
-                    <div class="item-name">
-                        <label for="Itemname">Item Name :</label>
-                        <input type="text" id="Itemname" name="name" class="item-codecolum">
-                    </div>
-
-                    <br>
-                    <div class="qtyonhand">
-                        <label for="Qtyonhand">QtyOnHand :</label>
-                        <input type="text" name="qtyOnHand" class="item-codecolum" id="Qtyonhand">
-                    </div>
-                </div>
-
-                <div class="customerdivcolum">
-                    <label for="ItemCode">Item Code :</label>
-                    <input type="text" id="ItemCode" class="item-codecolum" name="ItemCode">
-                    <br>
-                    <br>
-                    <label for="Price">Price :</label>
-                    <input type="text" name="Price" class="item-codecolum" id="Price">
-                    <br>
-                    <br>
-                    <label for="orderQty">Order Quantity :</label>
-                    <input type="text" name="orderQty" class="item-codecolum" id="orderQty">
-                    <br>
-                    <br>
-                    <button type="submit" class="addplaceorderBTN">➕ Add Item</button>
-                </div>
-            </form>
         </div>
+<!--        billing-->
+        <div>
+            <div class="xbox">Billing</div>
+            <div class="form3">
+                <label for="total">Total:</label>
+                <input type="text" id="total" name="total" placeholder="Total">
+                <br>
+                <br>
+                <label for="sub">Sub Total:</label>
+                <input type="text" id="sub" name="sub" placeholder="Sub Total">
+                <br>
+                <br>
+                <label for="cash">Cash :</label>
+                <input type="text" id="cash" name="cash" placeholder="Cash">
+                <br>
+                <br>
+                <label for="discount">Discount :</label>
+                <input type="text" id="discount" name="discount" placeholder="Discount 10%">
 
-    </div>
-    <br>
-
-    <div class="windowdown">
-        <div class="windowdowntitle">
-            <h2>Order Biling</h2></div>
-        <div class="row g-3" id="billin">
-            <div class="col-2">
-                <input type="text" class="form-control" placeholder="Cash-  Rs /=" aria-label="Cash">
-            </div>
-            <div class="col-2">
-                <input type="text" class="form-control" placeholder="Discount" aria-label="Discount">
-            </div>
-            <div class="col-3">
-                <input type="text" class="form-control" placeholder="Balance" aria-label="Balance">
+                <button type="submit">🛒 BUY</button>
             </div>
         </div>
-        <label id="totlable">Total:-</label>
-        <br>
-        <br>
-        <label id="subtotlable">Sub Total:-</label>
-        <button type="submit">🛒 BUY</button>
     </div>
 
-    <br>
 
-    <table class="table bg-body-secondary">
+
+
+
+
+
+    <table class="table bg-body-secondary" id="plceTbl">
         <thead>
         <tr>
             <th scope="col">ItemCode</th>
