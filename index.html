@@ -93,10 +93,56 @@
     </div>
 
     <div class="d-md-flex justify-content-lg-start " style="width: 100vw" >
-        <button type="button" class="btn btn-success mb-3">Add Customer</button>
-        <button type="button" class="btn btn-primary mb-3">Update Customer</button>
-        <button type="button" class="btn btn-danger mb-3">Delete Customer</button>
-        <button type="button" class="btn btn-info mb-3">Get All Customer</button>
+
+
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Add Customer</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Update Customer</button>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Delete Customer</button>
+        <button type="button" class="btn btn-info  ">Get All Customer</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">New Customer</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3" id="id">
+                                <label for="ID-cus" class="col-form-label">Customer ID:</label>
+                                <input type="text" class="form-control" id="ID-cus">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Name-text" class="col-form-label">Customer Name:</label>
+                                <textarea class="form-control" id="Name-text"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Address-text" class="col-form-label">Customer Address:</label>
+                                <textarea class="form-control" id="Address-text"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Salary-text" class="col-form-label">Customer Salary:</label>
+                                <textarea class="form-control" id="Salary-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+
+
     </div>
     <br>
     <div class="position-relative bottom-0 end-0 top-0 " style="width: 100vw">
@@ -111,32 +157,33 @@
         </nav>
     </div>
     <br>
-    <table class="table">
+    <table class="table container-fluid " style="box-shadow: 2px 2px 2px 2px black">
         <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Customer ID</th>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Salary</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th>C001</th>
+            <td>Prabhash</td>
+            <td>Kaluthara</td>
+            <td>200K</td>
         </tr>
         <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <th>C002</th>
+            <td>Lakashan</td>
+            <td>Panadura</td>
+            <td>200K</td>
         </tr>
         <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <th>C003</th>
+            <td>Pasindu</td>
+            <td>Kethhena</td>
+            <td>200K</td>
         </tr>
         </tbody>
     </table>
@@ -150,10 +197,52 @@
     </div>
 
     <div class="d-md-flex justify-content-lg-start " style="width: 100vw" >
-        <button type="button" class="btn btn-success mb-3">Add Item</button>
-        <button type="button" class="btn btn-primary mb-3">Update Iten</button>
-        <button type="button" class="btn btn-danger mb-3">Delete Item</button>
-        <button type="button" class="btn btn-info mb-3">Get All Item</button>
+
+
+
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#itemexampleModal" data-bs-whatever="@mdo">Add Item</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#itemexampleModal" data-bs-whatever="@fat">Update Item</button>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#itemexampleModal" data-bs-whatever="@getbootstrap">Delete Item</button>
+        <button type="button" class="btn btn-info  ">Get All Item</button>
+
+        <div class="modal fade" id="itemexampleModal" tabindex="-1" aria-labelledby="ItmexampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="ItmexampleModalLabel">New Item</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3"  >
+                                <label for="code" class="col-form-label">Item Code:</label>
+                                <input type="text" class="form-control" id="code">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="TName-text" class="col-form-label">Item Name:</label>
+                                <textarea class="form-control" id="TName-text"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Price-text" class="col-form-label">Item Price:</label>
+                                <textarea class="form-control" id="Price-text"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Quantity-text" class="col-form-label">Item Quantity:</label>
+                                <textarea class="form-control" id="Quantity-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <br>
     <div class="position-relative bottom-0 end-0 top-0 " style="width: 100vw">
@@ -168,32 +257,33 @@
         </nav>
     </div>
     <br>
-    <table class="table">
+    <table class="table container-fluid" style="box-shadow: 2px 2px 2px 2px black">
         <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Item Code</th>
+            <th scope="col">Item-Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Qty</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th scope="row">T001</th>
+            <td>LCY</td>
+            <td>Rs1750.00/=</td>
+            <td>96</td>
         </tr>
         <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <th >T002</th>
+            <td>Moose</td>
+            <td>Rs2500.00/=</td>
+            <td>500</td>
         </tr>
         <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <th>T003</th>
+            <td>Celvin Kevin</td>
+            <td>Rs200.00/=</td>
+            <td>1500</td>
         </tr>
         </tbody>
     </table>
