@@ -1,491 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>POS System</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="assets/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <link rel="icon" href="assets/img/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--    https://prabhawijera.github.io/Boostrap-POS/-->
 </head>
 <body>
 <header>
 
-    <nav class="navbar navbar-light" id="home">
-        <div class="container">
-            <a class="navbar-brand" href="https://www.youtube.com/watch?v=i6SO11KNIMI">
-                <img src="assets/img/logo.png" alt="" >
+    <!-- Example Code -->
+
+    <nav class="navbar navbar-expand-lg bg-warning" style="box-shadow: 3px 3px #6c757d">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" >
+                <img src="assets/img/logo.png" alt="" width="100" height="85">
             </a>
-            <ul class="nav justify-content-lg-start">
-                <li class="nav-item">
-                    <a class="nav-link active text-info fw-bold  " href="#home">🏠 Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active text-info fw-bold" href="#cus">👨 Customer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active text-info fw-bold" href="#ITM">🎁 Items</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active text-info fw-bold" href="#placeorder" >🛒 Order</a>
-                </li>
-                <div class="btn-group ">
-                    <button type="button" class="btn btn-secondary" style="height: fit-content">🔐 LogIn</button>
-
-                    <button type="button" class="btn btn-success" style="height: fit-content">🪪 Sign-In</button>
-                </div>
-            </ul>
-
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars" id="ihambeger"></i>
-            </a>
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cus">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Items">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#PlaceOrder">PlaceOrder</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Log-in</a></li>
+                            <li><a class="dropdown-item" href="#">Sign-in</a></li>
+                            <li><a class="dropdown-item" href="#">Info</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+
 </header>
-<br>
-<main class="homemenu" id="cus">
-    <div class="bg-info">
-        <h1 class="text-center">🤖 Manage Customer</h1>
+
+<!-- End Example Code -->
+<!--home section-->
+<section id="home" class="m-1">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade  w-100" style="box-shadow: 5px 5px black ">
+        <div class="carousel-inner ">
+            <div class="carousel-item active ">
+                <img src="assets/img/White%20Men%20Clothing%20Promo%20Mobile%20Video.gif" class="d-block w-100" alt="..."  height="650">
+
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Grey%20Simple%20Fashion%20Collection%20Photo%20Collage.png" class="d-block w-100" alt="..." width="" height="650">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Black%20Men%20Clothing%20Promo%20Instagram%20Post.png" class="d-block w-100" alt="..."  height="650">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/Black%20Men%20Clothing%20Promo%20Instagram%20Post%20(1).png" class="d-block w-100" alt="..."  height="650">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <br>
     </div>
-    <br>
-    <br>
-    <div class="customerBTNs">
-<!--       add customer-->
-
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">➕ Add Customer</button>
-        <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addexampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="addModalLabel">New message</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="addrecipient-name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="addmessage-text"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-<!--        ===========================-->
-        <br>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">⬆️ Update Customer</button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <br>
-
-
-        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">🗑️ Delete Customer</button>
-        <div class="modal fade" id="dleteModal" tabindex="-1" aria-labelledby="deleteexampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="deleteModalLabel">New message</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="deleterecipient-name">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" id="cussearch">📑️Get All Customer</button>
-        </div>
-
-    </div>
-    <br>
-    <nav class="navbar navbar-light bg-secondary">
-        <div class="container-fluid">
-            <a class="navbar-brand ">🔍 Search Customer</a>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
-
-
-    <table class="table bg-body-secondary">
-        <thead>
-        <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Address</th>
-            <th scope="col">Salary</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Sunil</td>
-            <td>Panadura</td>
-            <td>$5000</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Prabhash</td>
-            <td>Gampaha</td>
-            <td>$200K</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Lakshan</td>
-            <td>Gampaha</td>
-            <td>$5050</td>
-        </tr>
-        </tbody>
-    </table>
-</main>
-
-<section  id="ITM">
-    <div class="bg-info">
-        <h1 class="text-center">🗃️ Manage Items</h1>
-    </div>
-    <br>
-    <br>
-    <div class="ItemsBTNs">
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">➕ Add Item</button>
-        <div class="modal fade" id="additemModal" tabindex="-1" aria-labelledby="additemexampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="additemModalLabel">New message</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="additemrecipient-name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="additemmessage-text"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">⬆️ Update Item</button>
-        <div class="modal fade" id="itemexampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="itemexampleModalLabel">New message</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="itemrecipient-name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="itemmessage-text"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <br>
-
-        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">🗑️ Delete Item</button>
-        <div class="modal fade" id="dleteitemModal" tabindex="-1" aria-labelledby="deleteexampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="deleteitemModalLabel">New message</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="deleteitemrecipient-name">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">📑️Get All Customer</button>
-    </div>
-    <br>
-    <nav class="navbar navbar-light bg-secondary">
-        <div class="container-fluid">
-            <a class="navbar-brand">🔍 Search Items</a>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-
-    <table class="table bg-body-secondary">
-        <thead>
-        <tr>
-            <th scope="col">Item Code</th>
-            <th scope="col">Item Name</th>
-            <th scope="col">Item Price</th>
-            <th scope="col">Item QTY</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>T-shirt</td>
-            <td>Rs.2300.00</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Moose</td>
-            <td>Rs.990.00</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>LCY</td>
-            <td>Rs.1750.00</td>
-            <td>80</td>
-        </tr>
-        </tbody>
-    </table>
 </section>
 
 
-<!--==========place order=====================-->
-<section class="placeorder" id="placeorder">
-    <div class="bg-info">
-        <h1 class="text-center">🛒 PlaceOrder</h1>
+<br>
+<section id="cus">
+    <div class="container-fluid bg-warning" >
+        <h1 class="text-center">Customer Management</h1>
     </div>
 
-    <div class="mainwindoe">
-<!--        orderdetails-->
-        <div id="ordersec">
-            <div class="xbox">Order Details</div>
-            <div class="ORDERFORM">
-
-                <label for="orderId">Order ID:</label>
-                <input type="text" name="orderID" id="orderId" style="width: 250px">
-                <br>
-                <br>
-                <label for="date" class="date">Date:</label>
-                <input type="datetime-local" name="date" id="date" style="width: 300px" class="date">
-                <br>
-                <br>
-                <label for="cusIds">Customer ID:</label>
-                <select name="cusid" id="cusIds"  style="width: 250px">
-                    <option value=""hidden>Customer ID's</option>
-                    <option value="C001">C001</option>
-                    <option value="C002">C002</option>
-                    <option value="C003">C003</option>
-                </select>
-                <br>
-                <br>
-                <label for="name">Name :</label>
-                <input type="text" name="name" id="name" style="width: 250px">
-                <br>
-                <br>
-                <label for="address">Address :</label>
-                <input name="address" id="address" style="width: 250px">
-            </div>
-
-        </div>
-<!--        items details-->
-        <div id="2box">
-            <div class="xbox"> Items Details</div>
-            <div class="itemform">
-
-                <label for="itemid">Items ID's:</label>
-                <select name="itemid" id="itemid"  style="width: 250px">
-                    <option value=""hidden>Item ID's</option>
-                    <option value="T001">T001</option>
-                    <option value="T002">T002</option>
-                    <option value="T003">T003</option>
-                </select>
-                <br>
-                <br>
-                <label for="itemName">Items Name :</label>
-                <select name="itemsname" id="itemName"  style="width: 250px">
-                    <option value=""hidden>Items Name's</option>
-                    <option value="LCY">LCY</option>
-                    <option value="Moose">Moose</option>
-                    <option value="T-shirts">T-shirts</option>
-                </select>
-                <br>
-                <br>
-                <label for="price">Price :</label>
-                <input type="text" name="price" id="price" style="width: 250px">
-                <br>
-                <br>
-                <label for="qtyOnhand">QTY On Hand :</label>
-                <input type="text" id="qtyOnhand" name="qtyOnhand" placeholder="QTY">
-                <br>
-                <br>
-                <label for="orderqty">Order Qty:</label>
-                <input type="text" id="orderqty" name="orderqty" placeholder="Order Qty">
-
-                <button type="submit">➕ Add Item </button>
-            </div>
-
-        </div>
-<!--        billing-->
-        <div>
-            <div class="xbox">Billing</div>
-            <div class="form3">
-                <label for="total">Total:</label>
-                <input type="text" id="total" name="total" placeholder="Total">
-                <br>
-                <br>
-                <label for="sub">Sub Total:</label>
-                <input type="text" id="sub" name="sub" placeholder="Sub Total">
-                <br>
-                <br>
-                <label for="cash">Cash :</label>
-                <input type="text" id="cash" name="cash" placeholder="Cash">
-                <br>
-                <br>
-                <label for="discount">Discount :</label>
-                <input type="text" id="discount" name="discount" placeholder="Discount 10%">
-
-                <button type="submit">🛒 BUY</button>
-            </div>
-        </div>
+    <div class="d-md-flex justify-content-lg-start " style="width: 100vw" >
+        <button type="button" class="btn btn-success mb-3">Add Customer</button>
+        <button type="button" class="btn btn-primary mb-3">Update Customer</button>
+        <button type="button" class="btn btn-danger mb-3">Delete Customer</button>
+        <button type="button" class="btn btn-info mb-3">Get All Customer</button>
     </div>
-
-
-
-
-
-
-    <table class="table bg-body-secondary" id="plceTbl">
+    <br>
+    <div class="position-relative bottom-0 end-0 top-0 " style="width: 100vw">
+        <nav class="navbar navbar-light bg-secondary d-md-flex justify-content-lg-end "style="width: 97vw">
+            <div class="container-fluid">
+                <a class="navbar-brand ">🔍 Search Customer</a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <table class="table">
         <thead>
         <tr>
-            <th scope="col">ItemCode</th>
-            <th scope="col">ItemName</th>
-            <th scope="col">Price</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Total</th>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <th>1</th>
+            <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
-            <td>@mdo</td>
         </tr>
         <tr>
-            <th>2</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th>3</th>
+            <th scope="row">2</th>
             <td>Jacob</td>
             <td>Thornton</td>
             <td>@fat</td>
-            <td>@fat</td>
         </tr>
         <tr>
-            <th>4</th>
-            <td>Larry the Bird</td>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
             <td>@twitter</td>
         </tr>
         </tbody>
     </table>
+
 </section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-<script crossorigin="anonymous"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+<!--item manage-->
+
+<section id="Items">
+    <div class="container-fluid bg-warning" >
+        <h1 class="text-center">Item Management</h1>
+    </div>
+
+    <div class="d-md-flex justify-content-lg-start " style="width: 100vw" >
+        <button type="button" class="btn btn-success mb-3">Add Item</button>
+        <button type="button" class="btn btn-primary mb-3">Update Iten</button>
+        <button type="button" class="btn btn-danger mb-3">Delete Item</button>
+        <button type="button" class="btn btn-info mb-3">Get All Item</button>
+    </div>
+    <br>
+    <div class="position-relative bottom-0 end-0 top-0 " style="width: 100vw">
+        <nav class="navbar navbar-light bg-secondary d-md-flex justify-content-lg-end "style="width: 97vw">
+            <div class="container-fluid">
+                <a class="navbar-brand ">🔍 Search Customer</a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+
+<section id="PlaceOrder">
+    <div class="container-fluid bg-warning" >
+        <h1 class="text-center">Place order</h1>
+    </div>
+    <br>
+    <div class="row container-fluid">
+        <div class="col-sm-12 col-md-6 col-lg-4 bg-warning ">
+            <div class="bg-info w-100 ">Order Invoice</div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Order ID</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Date</label>
+                <input type="date" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="selectCus" class="form-label">Customer</label>
+                <select id="selectCus" class="form-select">
+                    <option hidden>Customer ID</option>
+                    <option value="1">C001</option>
+                    <option>C002</option>
+                    <option>C003</option>
+                    <option>C004</option>
+                    <option>C005</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput4" class="form-label">Customer ID</label>
+                <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="name@example.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput5" class="form-label">Address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput5" placeholder="name@example.com">
+            </div>
+        </div>
+
+        <!--    item detals form/-->
+        <div class="col-sm-12 col-md-6 col-lg-4 bg-success">
+            <div class="bg-info w-100">Item Select</div>
+            <div class="mb-3">
+                <label for="selctItem" class="form-label">Item</label>
+                <select id="selctItem" class="form-select">
+                    <option hidden>Item</option>
+                    <option value="1">T001</option>
+                    <option value="1">T002</option>
+                    <option value="1">S003</option>
+                    <option value="1">T004</option>
+                    <option value="1">S005</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="Input2" class="form-label">Item Code</label>
+                <input type="text" class="form-control" id="Input2" placeholder="name@example.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="Input3" class="form-label">Item Name</label>
+                <input type="text" class="form-control" id="Input3" placeholder="name@example.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="Input4" class="form-label">Price</label>
+                <input type="email" class="form-control" id="Input4" placeholder="name@example.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="Input5" class="form-label">QtyOnHand</label>
+                <input type="email" class="form-control" id="Input5" placeholder="name@example.com">
+            </div>
+
+
+            <div class="mb-3">
+                <label for="Input6" class="form-label">Order Quantity</label>
+                <input type="email" class="form-control" id="Input6" placeholder="name@example.com">
+            </div>
+            <button type="button" class="btn btn-info">Add Item</button>
+        </div>
+
+        <!--      billing form-->
+        <div class="col-sm-12 col-md-6 col-lg-4 bg-warning">
+            <div class="bg-info w-100">Billing</div>
+            <div>
+                <span><label for="total">Total :<h2 id="total">1050 Rs/=</h2></label></span>
+                <br>
+
+                <span><label for="subtotal">Sub-Total :<h2 id="subtotal">945 Rs/=</h2></label></span>
+            </div>
+
+            <div class="mb-3">
+                <label for="cash" class="form-label">Cash</label>
+                <input type="text" class="form-control" id="cash" placeholder="name@example.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="dis" class="form-label">Discount</label>
+                <input type="text" class="form-control" id="dis" placeholder="name@example.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="blanc" class="form-label">Balance:</label>
+                <input type="email" class="form-control" id="blanc" placeholder="name@example.com">
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-info">Purchace</button>
+            </div>
+
+        </div>
+        <br>
+        <hr>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</section>
+
+
 </body>
 </html>
